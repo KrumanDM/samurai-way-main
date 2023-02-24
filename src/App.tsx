@@ -7,6 +7,7 @@ function App() {
      Hello, samurai! Let's go!
     </div>
   );
+
 }
 
 export default App;
