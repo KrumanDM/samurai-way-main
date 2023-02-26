@@ -1,5 +1,6 @@
 import React from "react";
 
+
 type TechnologiesPropsType = {
   title: string
 }
