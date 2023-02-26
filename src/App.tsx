@@ -9,7 +9,7 @@ import Technologies from "./Technologies";
 function App() {
   return (
     <div>
-      <Header title={"DRAGONFORCE"} />
+      <Header title={"Programers"} />
       <Technologies title={"cssssss"}/>
       <Footer value={1999}/>
       <Jankins value ={2007}/>
