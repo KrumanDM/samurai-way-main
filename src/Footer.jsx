@@ -1,7 +1,11 @@
 import React from "react";
 
-const Footer = () => {
-  return <div>IT-KAMASUTRA</div>;
+type FooterPropsType = {
+  value: number
+}
+
+const Footer = (props: FooterPropsType) => {
+  return <div>{props.value}</div>;
 };
 
 export default Footer;

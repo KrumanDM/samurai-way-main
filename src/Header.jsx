@@ -1,11 +1,13 @@
 import React from "react";
 
-const Header = () => {
+type HeaderPropsType = {
+  title: string
+}
+
+const Header = (props: HeaderPropsType) => {
   return (
     <div>
-      <a href="#">Home</a>
-      <a href="#">News Feed</a>
-      <a href="#">Messages</a>
+      <a>{props.title}</a>
     </div>
   );
 };

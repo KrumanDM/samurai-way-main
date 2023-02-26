@@ -1,12 +1,14 @@
 import React from "react";
 
-const Technologies = () => {
+type TechnologiesPropsType = {
+  title: string
+}
+
+const Technologies = (props: TechnologiesPropsType) => {
   return (
     <div>
       <ul>
-        <li>css</li>
-        <li>html</li>
-        <li>js</li>
+        <li>{props.title}</li>
       </ul>
     </div>
   );
