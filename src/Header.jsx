@@ -7,7 +7,7 @@ type HeaderPropsType = {
 const Header = (props: HeaderPropsType) => {
   return (
     <div>
-      <a>{props.title}</a>
+      <h1>{props.title}</h1>
     </div>
   );
 };
