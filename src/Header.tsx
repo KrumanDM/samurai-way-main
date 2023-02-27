@@ -1,5 +1,6 @@
 import React from "react";
 
+
 type HeaderPropsType = {
   title: string
 }
