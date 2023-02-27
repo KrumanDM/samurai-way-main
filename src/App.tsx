@@ -12,13 +12,10 @@ function App() {
       <Header title={"Programers"} />
       <Technologies title={"cssssss"}/>
       <Footer value={1999}/>
-      <Jankins value ={2007}/>
+      <Jankins value={2007}/>
     </div>
   );
 }
-
-
-
 type JankinsPropsType = {
   value: number
 }
