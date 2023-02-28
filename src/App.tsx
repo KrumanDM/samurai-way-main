@@ -19,6 +19,7 @@ function App() {
 }
 
 
+
 type JankinsPropsType = {
   value: number
 }
