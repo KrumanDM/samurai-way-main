@@ -24,6 +24,7 @@ type JankinsPropsType = {
   value: number
 }
 
+
 const Jankins = (props: JankinsPropsType) => {
   return (
     <div>
