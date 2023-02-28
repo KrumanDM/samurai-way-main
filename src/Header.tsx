@@ -5,6 +5,7 @@ type HeaderPropsType = {
   title: string
 }
 
+
 const Header = (props: HeaderPropsType) => {
   return (
     <div>
