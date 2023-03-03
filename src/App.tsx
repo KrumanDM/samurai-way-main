@@ -1,32 +1,16 @@
 
 import React from "react";
 import "./App.css";
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
 
 
 
 function App() {
   return (
     <div className="app-wrapper">
-      <header className="header">
-      <img src="#"></img>
-      </header>
-      <nav className="nav">
-      <div>
-        <a>Profile</a> 
-      </div>
-      <div>
-        <a>Messages</a> 
-      </div>
-      <div>
-        <a>News</a> 
-      </div>
-      <div>
-        <a>Music</a> 
-      </div>
-      <div>
-        <a>Settinghs</a> 
-      </div>
-      </nav>
+      <Header />
+      <Navbar />
       <div className="content">
         <div>
         <img src="https://sun2.cosmostv-by-minsk.userapi.com/impg/O_Sfh3gmJlbUBh-2hgwvkh-bXeRGMyV0QHLJ_Q/DJAb9B1CIGA.jpg?size=604x364&quality=96&sign=0c3e2a12e7302055b558287a7f111fe8&type=album"></img>
