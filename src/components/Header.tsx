@@ -1,11 +1,11 @@
 import React from "react";
 
 const Header = () => {
-    return(
+  return (
     <header className="header">
       <img src="#"></img>
-      </header>
-    )
-}
+    </header>
+  );
+};
 
-export default Header
+export default Header;
