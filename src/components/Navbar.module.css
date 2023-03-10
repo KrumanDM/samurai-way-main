@@ -1,7 +1,10 @@
 .nav {
   grid-area: n;
-  background-color: burlywood;
+  background-color: rgb(241, 198, 141);
 }
 .item {
   color:white;
+}
+.item.active {
+  color:gold
 }
