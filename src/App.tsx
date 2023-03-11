@@ -12,7 +12,9 @@ function App() {
       <Header />
       <Navbar />
       <Profile />
-      <Dialogs />
+      <div class={s.content}>
+          <Dialogs />
+      </div>
     </div>
   );
 }
