@@ -12,7 +12,7 @@ function App() {
       <Header />
       <Navbar />
       <Profile />
-      <div class={s.content}>
+      <div class={"app-wrapper-content"}>
           <Dialogs />
       </div>
     </div>
