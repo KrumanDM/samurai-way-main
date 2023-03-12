@@ -1,5 +1,6 @@
 
 import React from "react";
+import { Route } from "react-router-dom";
 import "./App.css";
 import Dialogs from "./components/Dialogs/Dialogs";
 import Header from "./components/Header/Header";
@@ -11,9 +12,11 @@ function App() {
     <div className="app-wrapper">
       <Header />
       <Navbar />
-      {/* <Profile /> */}
+      
       <div className={"app-wrapper-content"}>
-          <Dialogs />
+          <Route component={Dialogs}/>
+          <Route component={Profile}/>
+         
       </div>
     </div>
   );
