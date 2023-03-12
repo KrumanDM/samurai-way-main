@@ -1,7 +1,9 @@
 import React from "react"
 import s from './Dialogs.module.css'
 
-const Dialogs = () => {
+type MessageType = (any)
+
+const Dialogs: React.FC<MessageType> = (props) => {
     return(
         <div>
            Dialogs

@@ -2,7 +2,9 @@ import React from "react";
 import MyPosts from "./MyPosts/Post/MyPosts";
 import s from"./Profile.module.css"
 
-const Profile = () => {
+type MessageType = (any)
+
+const Profile: React.FC<MessageType> = (props) => {
   return (
     <div >
       <div>
