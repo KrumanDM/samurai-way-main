@@ -1,10 +1,8 @@
 import React from "react";
 
-
 type HeaderPropsType = {
-  title: string
-}
-
+  title: string;
+};
 
 const Header = (props: HeaderPropsType) => {
   return (
@@ -13,6 +11,5 @@ const Header = (props: HeaderPropsType) => {
     </div>
   );
 };
-
 
 export default Header;
