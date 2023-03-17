@@ -16,5 +16,4 @@ const Profile: React.FC<MessageType> = (props) => {
   );
 };
 
-
 export default Profile;
