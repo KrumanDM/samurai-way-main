@@ -7,14 +7,14 @@ type NavbarPropsType = {
   
 }
 
-const Navbar = () => {
+const Navbar = (props:NavbarPropsType) => {
   return (
     <nav className={s.nav}>
       <div className={s.item}>
-        <NavLink to="/profile" activeClassName={s.activeLink}>Profile</NavLink>
+        <NavLink to="/profile" className={navData=>navData.isActive? s.activeLink: s.item}>Profile</NavLink>
       </div>
       <div className={`${s.item} ${s.active}`}>
-        <NavLink to="/dialogs" activeClassName={s.activeLink}>Messages</NavLink>
+        <NavLink to="/dialogs" className={navData=>navData.isActive? s.activeLink: s.item}>Messages</NavLink>
       </div>
       <div className={s.item}>
         <a>News</a>
