@@ -8,7 +8,7 @@ const Dialogs: React.FC<MessageType> = (props) => {
     <div className={s.dialogs}>
       <div className={s.dialogsItems}>
         <div className={s.dialog + " " + s.active}>Dima</div>
-        <div className={s.dialog}>Dimas</div>
+        <div className={s.dialog}>Artem</div>
         <div className={s.dialog}>Zhenya</div>
         <div className={s.dialog}>Valera</div>
         <div className={s.dialog}>Denis</div>
