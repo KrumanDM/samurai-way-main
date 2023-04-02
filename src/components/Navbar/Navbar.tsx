@@ -7,7 +7,7 @@ type NavbarPropsType = {
   
 }
 
-const Navbar = (props:NavbarPropsType) => {
+const Navbar = () => {
   return (
     <nav className={s.nav}>
       <div className={s.item}>
