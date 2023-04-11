@@ -11,7 +11,6 @@ const Dialogs: React.FC<MessageType> = (props) => {
         <div className={s.dialog + " " + s.active}>
           <NavLink to="/dialogs/1">Dima</NavLink> 
         </div>
-          
         <div className={s.dialog}>
            <NavLink to="/dialogs/2">Artem</NavLink>
         </div>
