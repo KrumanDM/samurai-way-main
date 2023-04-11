@@ -2,11 +2,15 @@ import React from "react";
 import s from "./Dialogs.module.css";
 import {NavLink} from "react-router-dom"
 
+
 type MessageType = any;
 
 type DialogItemType = {
   name: string
   id: string
+}
+type MessageTypeProps = {
+  message:string
 }
 
 const DialogItem = (props:DialogItemType) =>{
@@ -17,11 +21,15 @@ const DialogItem = (props:DialogItemType) =>{
 </div>
 }
 
+const Message = (props:MessageTypeProps) => {
+  return <div className={s.dialog}>{props.message}</div>
+}
+
 const Dialogs: React.FC<MessageType> = (props) => {
   return (
     <div className={s.dialogs}>
       <div className={s.dialogsItems}>
-        
+
         <DialogItem name="Dima" id="1"/>
         <DialogItem name="Artem" id="2"/>
         <DialogItem name="Zhenya" id="3"/>
@@ -31,9 +39,10 @@ const Dialogs: React.FC<MessageType> = (props) => {
         
       </div>
       <div className={s.messages}>
-        <div className={s.dialog}>Hi</div>
-        <div className={s.dialog}>Thats good</div>
-        <div className={s.dialog}>Realy well</div>
+        <Message message="hello fuckers"/>
+        <Message message="Thats good"/>
+        <Message message="Realy well"/>
+        
       </div>
     </div>
   );
