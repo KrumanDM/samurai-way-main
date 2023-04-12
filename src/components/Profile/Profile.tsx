@@ -1,15 +1,15 @@
 import React from "react";
 import MyPosts from "./MyPosts/Post/MyPosts";
-import s from"./Profile.module.css"
+import s from "./Profile.module.css";
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
-type MessageType = (any)
+type MessageType = any;
 
 const Profile: React.FC<MessageType> = (props) => {
   return (
-    <div >
+    <div>
       <ProfileInfo />
-      
+
       <MyPosts />
     </div>
   );
