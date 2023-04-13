@@ -35,23 +35,30 @@ const Dialogs: React.FC<MessageType> = (props) => {
     {id:"5",name:"Denis"},
     {id:"6",name:"Kate"}
   ]
+  let messagesData = [
+    {id:"1",message:"Hello fuckers"},
+    {id:"2",message:"Thats good"},
+    {id:"3",message:"Really well"},
+    
+  ]
 
   return (
     <div className={s.dialogs}>
       <div className={s.dialogsItems}>
 
-        <DialogItem name="Dima" id="1"/>
-        <DialogItem name="Artem" id="2"/>
+        {/* <DialogItem name={dialogsData[0].name} id={dialogsData[0].id}/>
+        <DialogItem name={dialogsData[1].name} id={dialogsData[1].id}/>
         <DialogItem name="Zhenya" id="3"/>
         <DialogItem name="Valera" id="4"/>
         <DialogItem name="Denis" id="5"/>
-        <DialogItem name="Kate" id="6"/>
+        <DialogItem name="Kate" id="6"/> */}
         
       </div>
       <div className={s.messages}>
-        <Message message="hello fuckers"/>
-        <Message message="Thats good"/>
-        <Message message="Realy well"/>
+        <Message message={messagesData[0].message}/>
+        <Message message={messagesData[1].message}/>
+        <Message message={messagesData[2].message}/>
+      
         
       </div>
     </div>
