@@ -2,10 +2,7 @@ import React from "react";
 import s from "./MyPosts.module.css";
 import Post from "./Post/Post";
 
-type MyPostsPropsType ={
-  message: string
-  likesCount: number
-}
+type MyPostsPropsType = any
 
 const MyPosts = (props:MyPostsPropsType) => {
 
@@ -15,7 +12,8 @@ const MyPosts = (props:MyPostsPropsType) => {
     {id:"3",message:"Really well",likesCount:14}
     
   ]
-  let postsElements = posts.map( p=><MyPosts message={p.message} likesCount={p.likesCount}/>)
+  let postsElements = 
+  posts.map( p => <Post message={p.message} likesCount={p.likesCount}/>)
 
   return (
     <div className={s.postsBlock}>
@@ -29,7 +27,7 @@ const MyPosts = (props:MyPostsPropsType) => {
         </div>
       </div>
       <div className={s.posts}>
-        postsElements
+        {postsElements}
       </div>
     </div>
   )
