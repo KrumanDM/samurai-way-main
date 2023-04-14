@@ -46,16 +46,8 @@ const Dialogs: React.FC<MessageType> = (props) => {
 
   return (
     <div className={s.dialogs}>
-      <div className={s.dialogsItems}>
-
-        {dialogsElement}
-        
-      </div>
-      <div className={s.messages}>
-        
-      {messagesElement}
-        
-      </div>
+      <div className={s.dialogsItems}>{dialogsElement}</div>
+      <div className={s.messages}>{messagesElement}</div>
     </div>
   );
 };
