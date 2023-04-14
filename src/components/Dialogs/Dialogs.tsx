@@ -39,7 +39,6 @@ const Dialogs: React.FC<MessageType> = (props) => {
     {id:"1",message:"Hello fuckers"},
     {id:"2",message:"Thats good"},
     {id:"3",message:"Really well"},
-    
   ]
 
   let dialogsElement = dialogs.map( d => <DialogItem name={d.name} id={d.id}/>)
