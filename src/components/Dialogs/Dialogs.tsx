@@ -21,9 +21,7 @@ const DialogItem = (props:DialogItemType) =>{
 </div>
 }
 
-const Message = (props:MessageTypeProps) => {
-  return <div className={s.dialog}>{props.message}</div>
-}
+
 
 const Dialogs: React.FC<MessageType> = (props) => {
 
