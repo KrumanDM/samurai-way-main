@@ -4,12 +4,7 @@ import {NavLink} from "react-router-dom"
 import DialogItem from "./DialogItem/DialogItem";
 import Message from "./Message/Message";
 
-
 type MessageType = any;
-
-
-
-
 
 const Dialogs: React.FC<MessageType> = (props) => {
 
