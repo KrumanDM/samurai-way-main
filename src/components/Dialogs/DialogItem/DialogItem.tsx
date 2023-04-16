@@ -11,5 +11,4 @@ const DialogItem = (props:DialogItemType) =>{
     <NavLink to={path}>{props.name}</NavLink> 
   </div>
   }
-
 export default DialogItem
