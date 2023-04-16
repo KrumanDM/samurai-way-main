@@ -7,13 +7,7 @@ import Message from "./Message/Message";
 
 type MessageType = any;
 
-type DialogItemType = {
-  name: string
-  id: string
-}
-type MessageTypeProps = {
-  message:string
-}
+
 
 
 
