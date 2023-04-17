@@ -6,7 +6,9 @@ import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
 import Profile from "./components/Profile/Profile";
 
-const App = () => {
+type AppPropsType = any
+
+const App = (props:AppPropsType) => {
   return (
     <BrowserRouter>
       <div className="app-wrapper">
@@ -15,8 +17,8 @@ const App = () => {
 
         <div className={"app-wrapper-content"}>
           <Routes>
-            <Route path="/profile" element={<Profile />} />
-            <Route path="/dialogs/*" element={<Dialogs />} />
+          <Route path="/dialogs/*" element= {<Dialogs dialogsData = {props.dialogsData} messagesData = {props.messagesData} />}/>
+          <Route path="/profile" element= {<Profile postsData = {props.postsData} />} />
           </Routes>
         </div>
       </div>
