@@ -10,7 +10,7 @@ const Profile: React.FC<MessageType> = (props) => {
     <div>
       <ProfileInfo />
 
-      <MyPosts />
+      <MyPosts posts={props.posts}/>
     </div>
   );
 };

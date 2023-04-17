@@ -8,14 +8,9 @@ type MyPostsPropsType = {
 
 const MyPosts = (props:MyPostsPropsType) => {
 
-  let posts = [
-    {id:"1",message:"Hello fuckers",likesCount:12},
-    {id:"2",message:"Thats good",likesCount:13},
-    {id:"3",message:"Really well",likesCount:14}
-    
-  ]
+  
   let postsElements = 
-  posts.map( p => <Post message={p.message} likesCount={p.likesCount}/>)
+  props.posts.map( p => <Post message={p.message} likesCount={p.likesCount}/>)
 
   return (
     <div className={s.postsBlock}>
