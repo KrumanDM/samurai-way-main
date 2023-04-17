@@ -6,7 +6,15 @@ import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
 import Profile from "./components/Profile/Profile";
 
-type AppPropsType = any
+type AppPropsType = {
+  posts: PostsAppPropsType
+  dialogs: DialogsAppPropsType
+  messages: MessagesAppPropsType
+}
+type PostsAppPropsType=any
+type DialogsAppPropsType=any
+type MessagesAppPropsType=any
+
 
 const App = (props:AppPropsType) => {
   return (
