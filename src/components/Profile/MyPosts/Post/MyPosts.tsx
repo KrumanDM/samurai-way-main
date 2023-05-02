@@ -11,7 +11,7 @@ const MyPosts = (props:MyPostsPropsType) => {
 
   return (
     <div className={s.postsBlock}>
-           <h3>My posts</h3>
+          <h3>My posts</h3>
       <div>
         <div>
         <textarea></textarea>
