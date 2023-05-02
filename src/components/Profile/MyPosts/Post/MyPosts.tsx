@@ -5,7 +5,6 @@ import Post from "./Post/Post";
 type MyPostsPropsType = any
 
 const MyPosts = (props:MyPostsPropsType) => {
-
   
   let postsElements = 
   props.posts.map( p => <Post message={p.message} likesCount={p.likesCount}/>)
